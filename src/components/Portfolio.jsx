@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FaExternalLinkAlt, FaGithub, FaEye } from 'react-icons/fa'
-
+import iotLogo from '../Assets/iot.jpg'
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('all')
 
@@ -50,7 +50,7 @@ const Portfolio = () => {
       title: "IoT Monitoring System",
       category: "iot",
       description: "Internet of Things solution for real-time device monitoring and predictive maintenance.",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=500&h=300&fit=crop",
+      image:iotLogo,
       technologies: ["Python", "MQTT", "InfluxDB", "Grafana"],
       liveUrl: "#",
       githubUrl: "#"
