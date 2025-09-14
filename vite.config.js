@@ -2,11 +2,19 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
+// export default defineConfig({
+//   plugins: [react()],
+//   server: {
+//     port: 3000,
+//     open: true
+//   },
+//   base: '/Nexa-Website/'   // 👈 important for GitHub Pages
+// })
 export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
     open: true
   },
-  base: '/Nexa-Website/'   // 👈 important for GitHub Pages
+  base: '/'   // 👈 root for GitHub Pages custom domain
 })
