@@ -34,16 +34,16 @@ const About = () => {
           <div className="about-text">
             <h2 className="section-title">About Nexa IT Solutions</h2>
             <p className="about-description">
-              We are a leading IT solutions company dedicated to transforming businesses through 
-              innovative technology. Our team of expert developers, designers, and consultants 
+              We are a leading IT solutions company dedicated to transforming businesses through
+              innovative technology. Our team of expert developers, designers, and consultants
               work together to deliver exceptional results that drive growth and efficiency.
             </p>
             <p className="about-description">
-              Founded in 2019, we have successfully completed over 500 projects for clients 
-              across various industries. Our commitment to quality, innovation, and customer 
+              Founded in 2019, we have successfully completed over 500 projects for clients
+              across various industries. Our commitment to quality, innovation, and customer
               satisfaction has made us a trusted partner for businesses worldwide.
             </p>
-            
+
             <div className="about-stats">
               {stats.map((stat, index) => (
                 <div key={index} className="stat-item">
@@ -113,6 +113,13 @@ const About = () => {
           border-radius: 12px;
           border: 1px solid #e2e8f0;
         }
+            .stat-item {
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+        .stat-item:hover {
+            transform: translateY(-4px);
+        }
 
         .stat-icon {
           width: 50px;
@@ -132,15 +139,25 @@ const About = () => {
         }
 
         .stat-number {
-          font-size: 1.5rem;
-          font-weight: 700;
-          color: #1e293b;
-        }
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
 
-        .stat-label {
-          font-size: 0.875rem;
-          color: #64748b;
-        }
+    /* Gradient text */
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #9ca3af;
+}
 
         .about-visual {
           display: flex;
@@ -235,6 +252,13 @@ const About = () => {
         .value-description {
           color: #64748b;
           line-height: 1.6;
+        }
+          .stat {
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .stat:hover {
+            transform: translateY(-4px);
         }
 
         @media (max-width: 768px) {

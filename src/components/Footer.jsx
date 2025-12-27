@@ -232,7 +232,7 @@ const Footer = () => {
         }
 
         .contact-icon {
-          color: #3b82f6;
+          color: #ffffff;
           font-size: 1rem;
         }
 
